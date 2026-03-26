@@ -1,4 +1,4 @@
-class logentry:
+class LogEntry:
     def __init__(self, entry_id, date, email, equipment_id, description):
         self.entry_id = entry_id
         self.date = date
