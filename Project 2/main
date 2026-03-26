@@ -1,0 +1,6 @@
+print ("LabLog Manager starting...")
+
+from models import logentry
+
+entry = logentry("EXP-001", "2026-03-17", "test@email.com", "EQ-1", "Test")
+entry.display()
