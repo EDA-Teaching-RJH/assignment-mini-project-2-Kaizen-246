@@ -1,9 +1,13 @@
+# LabLog/Labs n' Logs Manager Main Application
+# This program allows users to add, view, and store lab entries.
+# It uses object-oriented programming (classes), regex validation, and file I/O.
 import csv
 from lablog.models import ExperimentEntry, FaultEntry
 from lablog.validators import is_valid_email
 
 entries = []
-
+# Main menu loop that continuously runs until the user exits
+# It allows the user to interact with the system by selecting options
 def menu():
     while True:
         print("1. Add Experiment")
@@ -26,7 +30,9 @@ def menu():
             break
         else:
             print("Invalid option")
-
+# Function to create a new ExperimentEntry object
+# Validates the email using regex before creating the entry
+# Email is valid in any xxxx@xxxx.xxx format
 def add_experiment():
     email = input("Email: ")
 

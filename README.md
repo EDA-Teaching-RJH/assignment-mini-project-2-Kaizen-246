@@ -1,1 +1,0 @@
-This is a Python application for managing lab logs and fault reports.
